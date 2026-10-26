@@ -1,0 +1,167 @@
+/* Paleta baseada na Bandeira da Tailândia:
+   - Vermelho: #A51931
+   - Branco: #FFFFFF
+   - Azul Escuro: #2D2A4A
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #2D2A4A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    background-color: #A51931;
+    color: #ffffff;
+    text-align: center;
+    border-bottom: 6px solid #2D2A4A;
+}
+
+.header-banner {
+    padding: 30px 15px;
+    background: linear-gradient(180deg, #A51931 0%, #801224 100%);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+nav {
+    background-color: #2D2A4A;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #A51931;
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    border: 2px solid #e0e0e0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.card.highlight {
+    border-left: 6px solid #A51931;
+}
+
+.badge {
+    background-color: #2D2A4A;
+    color: #ffffff;
+    font-size: 0.8rem;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    color: #2D2A4A;
+    margin-bottom: 12px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 5px;
+}
+
+.card p {
+    line-height: 1.6;
+    color: #444;
+}
+
+.grid-armas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.item-arma {
+    background-color: #2D2A4A;
+    color: #ffffff;
+    padding: 12px;
+    text-align: center;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.options-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.btn-opcao {
+    background-color: #ffffff;
+    color: #2D2A4A;
+    border: 2px solid #2D2A4A;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-opcao:hover {
+    background-color: #A51931;
+    color: #ffffff;
+    border-color: #A51931;
+}
+
+.resultado-box {
+    margin-top: 15px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+footer {
+    margin-top: auto;
+    width: 100%;
+    background-color: #2D2A4A;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.85rem;
+}
